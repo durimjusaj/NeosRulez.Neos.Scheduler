@@ -172,29 +172,6 @@ class Task
     }
 
     /**
-     * @var string
-     * @ORM\Column(nullable=true)
-     */
-    protected $email;
-
-    /**
-     * @return string
-     */
-    public function getEmail()
-    {
-        return $this->email;
-    }
-
-    /**
-     * @param string $email
-     * @return void
-     */
-    public function setEmail($email)
-    {
-        $this->email = $email;
-    }
-
-    /**
      * @var boolean
      */
     protected $recurring = true;

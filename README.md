@@ -17,8 +17,6 @@ NeosRulez:
   Neos:
     Scheduler:
       frequencyInput: false
-      templatePathAndFilename: 'resource://NeosRulez.Neos.Scheduler/Private/Templates/Mail/Task.html'
-      senderMail: 'noreply@foo.com'
 ```
 
 ## Cron job

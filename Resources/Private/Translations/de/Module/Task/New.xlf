@@ -2,13 +2,7 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
     <file original="" product-name="NeosRulez.Neos.Scheduler" source-language="de" datatype="plaintext">
         <body>
-            <trans-unit id="content.mailNotification" xml:space="preserve">
-				<source>E-Mail Benachrichtigung nach Ausführung</source>
-			</trans-unit>
-			<trans-unit id="content.mailAddress" xml:space="preserve">
-				<source>E-Mail Adresse</source>
-			</trans-unit>
-			<trans-unit id="content.every1Minute" xml:space="preserve">
+            <trans-unit id="content.every1Minute" xml:space="preserve">
 				<source>Minütlich</source>
 			</trans-unit>
 			<trans-unit id="content.every15Minutes" xml:space="preserve">

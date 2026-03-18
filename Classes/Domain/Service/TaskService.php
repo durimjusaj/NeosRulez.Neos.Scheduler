@@ -16,12 +16,6 @@ class TaskService
      */
     protected $taskRepository;
 
-    /**
-     * @Flow\Inject
-     * @var \NeosRulez\Neos\Scheduler\Domain\Service\MailService
-     */
-    protected $mailService;
-
 
     /**
      * @return string
@@ -37,9 +31,6 @@ class TaskService
                 if(new \DateTime() >= new \DateTime($executableTask['nextexecution']) || $executableTask['nextexecution'] == null) {
                     $this->executeShellScript($executableTask['command']);
                     $this->taskRepository->setExecution($executableTask['persistence_object_identifier']);
-                    if($executableTask['email']) {
-                        $this->mailService->sendMail($executableTask);
-                    }
                     $result .= 'Task "' . $executableTask['description'] . '" completed 👍' . "\n";
                 }
             }

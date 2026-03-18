@@ -46,10 +46,6 @@ prototype(NeosRulez.Neos.Scheduler:Module.TaskController.New) < prototype(Neos.F
                             <Neos.Fusion.Form:Checkbox field.value={I18n.translate('NeosRulez.Neos.Scheduler:Module.Task.Index:content.recurring')} attributes.checked={task.recurring ? true : false} />
                         </Neos.Fusion.Form:Neos.BackendModule.FieldContainer>
 
-                        <Neos.Fusion.Form:Neos.BackendModule.FieldContainer label={I18n.translate('NeosRulez.Neos.Scheduler:Module.Task.New:content.mailNotification')} field.name="task[email]" >
-                            <Neos.Fusion.Form:Input attributes.placeholder={I18n.translate('NeosRulez.Neos.Scheduler:Module.Task.New:content.mailAddress')} />
-                        </Neos.Fusion.Form:Neos.BackendModule.FieldContainer>
-
                     </fieldset>
 
                     <fieldset class="neos-span6 neos-offset1">
