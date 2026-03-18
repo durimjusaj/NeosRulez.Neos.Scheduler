@@ -39,7 +39,7 @@ class TaskRepository extends Repository
     public function findExecutable():array
     {
         $connection = $this->entityManager->getConnection();
-        return $connection->executeQuery('SELECT * FROM neosrulez_neos_scheduler_domain_model_task WHERE startdatetime <= NOW() AND stopdatetime >= NOW() AND active = 1 OR startdatetime <= NOW() AND stopdatetime = null AND active = 1')->fetchAll();
+        return $connection->executeQuery('SELECT * FROM neosrulez_neos_scheduler_domain_model_task WHERE (startdatetime <= NOW() AND stopdatetime >= NOW() AND active = 1) OR (startdatetime <= NOW() AND stopdatetime IS NULL AND active = 1)')->fetchAllAssociative();
     }
 
     /**

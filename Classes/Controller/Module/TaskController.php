@@ -20,6 +20,12 @@ class TaskController extends ActionController
      */
     protected $taskRepository;
 
+      /**
+     * @Flow\Inject
+     * @var \Neos\Flow\Persistence\PersistenceManagerInterface
+     */
+    protected $persistenceManager;
+
     /**
      * @param string $argument
      * @param string $property
